@@ -817,14 +817,6 @@
   revision = "2433035e513208b0f7bd5b50d0aecd889b2c1ff8"
 
 [[projects]]
-  branch = "master"
-  digest = "1:f91bb67d051a94cf6ab2cf07eee0550432afc31655838d42cdec258db4b348f0"
-  name = "github.com/kr/logfmt"
-  packages = ["."]
-  pruneopts = "NUT"
-  revision = "b84e30acd515aadc4b783ad4ff83aff3299bdfe0"
-
-[[projects]]
   digest = "1:e361d686ef1e70b8bd268cfb3953fcc0d59b43d4e5b6ad9a80112b06bff6cb2b"
   name = "github.com/lyft/protoc-gen-validate"
   packages = ["validate"]
@@ -1103,39 +1095,6 @@
   packages = ["."]
   pruneopts = "NUT"
   revision = "86672fcb3f950f35f2e675df2240550f2a50762f"
-
-[[projects]]
-  branch = "master"
-  digest = "1:ec0b4406ee4d860a33d6cf6748ec4c4546f6890e7c90d8fcf541e1ac7d9add91"
-  name = "github.com/signalfx/com_signalfx_metrics_protobuf"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "93e507b42f43f458a109ca278d1542a26a0b87fc"
-
-[[projects]]
-  branch = "master"
-  digest = "1:e3e4baeb39e30cfbe15396d38cb3780f2d1788ebf2663d198ce041411dc04f37"
-  name = "github.com/signalfx/gohistogram"
-  packages = ["."]
-  pruneopts = "NUT"
-  revision = "1ccfd2ff508314074672f4450a917011a2060408"
-
-[[projects]]
-  digest = "1:f7225d606bc5e230cd8cca3bb8bf2c05bd4dcd8a912cbe32c8d7f41dca4a61f5"
-  name = "github.com/signalfx/golib"
-  packages = [
-    "datapoint",
-    "errors",
-    "event",
-    "eventcounter",
-    "log",
-    "sfxclient",
-    "timekeeper",
-    "trace",
-  ]
-  pruneopts = "NUT"
-  revision = "b1be94c3ec8d1fdeccd62735b851489f0b3798e0"
-  version = "v1.1.6"
 
 [[projects]]
   digest = "1:6989062eb7ccf25cf38bf4fe3dba097ee209f896cda42cefdca3927047bef7b6"
@@ -1551,14 +1510,6 @@
   version = "v0.9.1"
 
 [[projects]]
-  digest = "1:341a7df38da99fe91ed40e4008c13cc5d02dcc98ed1a094360cb7d5df26d6d26"
-  name = "gopkg.in/logfmt.v0"
-  packages = ["."]
-  pruneopts = "NUT"
-  revision = "390ab7935ee28ec6b286364bba9b4dd6410cb3d5"
-  version = "v0.3.0"
-
-[[projects]]
   digest = "1:4e5a9cf82174cea34d2a04859fa7c22444d0f597c6666ebe32397d648c03c60a"
   name = "gopkg.in/russross/blackfriday.v2"
   packages = ["."]
@@ -1576,14 +1527,6 @@
   ]
   pruneopts = "NUT"
   revision = "89060dee6a84df9a4dae49f676f0c755037834f1"
-
-[[projects]]
-  digest = "1:a1efdbc2762667c8a41cbf02b19a0549c846bf2c1d08cad4f445e3344089f1f0"
-  name = "gopkg.in/stack.v1"
-  packages = ["."]
-  pruneopts = "NUT"
-  revision = "259ab82a6cad3992b4e21ff5cac294ccb06474bc"
-  version = "v1.7.0"
 
 [[projects]]
   digest = "1:7c95b35057a0ff2e19f707173cc1a947fa43a6eb5c4d300d196ece0334046082"
@@ -2052,11 +1995,6 @@
     "github.com/prometheus/common/model",
     "github.com/prometheus/prom2json",
     "github.com/satori/go.uuid",
-    "github.com/signalfx/com_signalfx_metrics_protobuf",
-    "github.com/signalfx/golib/datapoint",
-    "github.com/signalfx/golib/errors",
-    "github.com/signalfx/golib/sfxclient",
-    "github.com/signalfx/golib/trace",
     "github.com/spf13/cobra",
     "github.com/spf13/cobra/doc",
     "github.com/spf13/pflag",
@@ -2158,6 +2096,7 @@
     "k8s.io/client-go/kubernetes/scheme",
     "k8s.io/client-go/kubernetes/typed/admissionregistration/v1beta1",
     "k8s.io/client-go/kubernetes/typed/core/v1",
+    "k8s.io/client-go/listers/core/v1",
     "k8s.io/client-go/plugin/pkg/client/auth",
     "k8s.io/client-go/plugin/pkg/client/auth/gcp",
     "k8s.io/client-go/plugin/pkg/client/auth/oidc",
